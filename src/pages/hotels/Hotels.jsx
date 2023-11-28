@@ -22,7 +22,7 @@ const Hotels = () => {
   const cities = ['cairo', 'rome', 'lebanon', 'greece', 'dubai'];
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async() => {
       try {
         const data = await Axios(category, queryName);
         setFilteredHotels(data);
